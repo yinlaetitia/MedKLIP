@@ -97,4 +97,4 @@ def create_loader_RSNA(datasets, samplers, batch_size, num_workers, is_trains, c
             drop_last=drop_last,
         )              
         loaders.append(loader)
-    return loaders    
+    return loaders

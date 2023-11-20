@@ -210,11 +210,11 @@ def main(args, config):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', default='Path/To/Res_train.yaml')
-    parser.add_argument('--checkpoint', default='') 
-    parser.add_argument('--model_path', default='') 
-    parser.add_argument('--pretrain_path', default='Path/To/checkpoint.pth')
-    parser.add_argument('--output_dir', default='Path/To/Outputdir')
+    parser.add_argument('--config', default='configs/Res_train.yaml')
+    parser.add_argument('--checkpoint', default='')
+    parser.add_argument('--model_path', default='')
+    parser.add_argument('--pretrain_path', default='checkpoint/checkpoint_final.pth')
+    parser.add_argument('--output_dir', default='output')
     parser.add_argument('--device', default='cuda')
     parser.add_argument('--gpu', type=str,default='1', help='gpu')
     args = parser.parse_args()
