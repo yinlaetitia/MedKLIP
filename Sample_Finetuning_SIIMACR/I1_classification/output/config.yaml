@@ -1,0 +1,25 @@
+alpha: 0.4
+batch_size: 64
+image_res: 224
+mlm_probability: 0.15
+momentum: 0.995
+num_classes: 1
+optimizer:
+  lr: 1e-5
+  opt: adamW
+  weight_decay: 0.02
+queue_size: 8192
+schedular:
+  cooldown_epochs: 0
+  decay_rate: 1
+  epochs: 100
+  lr: 1e-5
+  min_lr: 1e-5
+  sched: cosine
+  warmup_epochs: 20
+  warmup_lr: 1e-5
+temp: 0.07
+test_batch_size: 64
+test_file: Path/To/test.csv
+train_file: Path/To/Train.csv
+valid_file: Path/To/Valid.csv

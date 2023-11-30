@@ -91,7 +91,7 @@ def main(args, config):
 
     #### Dataset #### 
     print("Creating dataset")
-    train_dataset = SIIM_ACR_Dataset(config['train_file']) 
+    train_dataset = SIIM_ACR_Dataset(config['train_file'])
     train_dataloader = DataLoader(
             train_dataset,
             batch_size=config['batch_size'],
